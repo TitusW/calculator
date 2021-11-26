@@ -26,7 +26,7 @@ func Tambah() gin.HandlerFunc {
 
 		defer cancel()
 
-		c.JSON(http.StatusOK, result)
+		c.JSON(http.StatusOK, gin.H{"result": result})
 	}
 }
 
@@ -43,7 +43,7 @@ func Kurang() gin.HandlerFunc {
 
 		defer cancel()
 
-		c.JSON(http.StatusOK, result)
+		c.JSON(http.StatusOK, gin.H{"result": result})
 	}
 }
 
@@ -60,7 +60,7 @@ func Kali() gin.HandlerFunc {
 
 		defer cancel()
 
-		c.JSON(http.StatusOK, result)
+		c.JSON(http.StatusOK, gin.H{"result": result})
 	}
 }
 
@@ -77,6 +77,6 @@ func Bagi() gin.HandlerFunc {
 
 		defer cancel()
 
-		c.JSON(http.StatusOK, result)
+		c.JSON(http.StatusOK, gin.H{"result": result})
 	}
 }
